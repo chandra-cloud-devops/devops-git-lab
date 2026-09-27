@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Build stage started"'
+                sh 'echo "Build executed from updated Jenkinsfile"'
             }
         }
 
