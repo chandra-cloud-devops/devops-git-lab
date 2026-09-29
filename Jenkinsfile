@@ -5,13 +5,16 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Build stage started"'
-                sh 'python3 -m py_compile app.py'
             }
         }
 
         stage('Test') {
             steps {
                 sh 'echo "Test stage started"'
+                sh 'echo "checking the Python Syntax"'
+                sh 'pytho3 -m py_complie app.py'
+                sh 'echo "Running Python application"'
+                sh 'python3 app.py'
             }
         }
 
