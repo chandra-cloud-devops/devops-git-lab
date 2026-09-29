@@ -1,5 +1,11 @@
-def add(a, b):
-    return a + b
+a = 10
+b = 3
 
-print("Result:", add(10, 20))
+result = a * b
+print("Result:", result)
+
+result = 10 / 0
+
+print("Hello from DevOps")
+
 print("Hello from DevOps")
